@@ -1,0 +1,6 @@
+LINUX SECURITY AUDIT REPORT
+Audit Date: 2026-10-19 14:27:07
+[WARNING] Account 'root' has UID 0
+[INFO] /etc/passwd file permissions: 0o644
+[WARNING] Direct SSH root login is enabled
+[WARNING] Password authentication is enabled
