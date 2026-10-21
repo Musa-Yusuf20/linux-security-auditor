@@ -1,6 +1,6 @@
-def check_ssh_config():
+def check_ssh_config(config_path="test_sshd_config"):
     findings = []
-    with open("test_sshd_config", "r") as file:
+    with open(config_path, "r") as file:
         for line in file:
             parts = line.strip().split()
             if not parts:
