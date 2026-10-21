@@ -1,10 +1,13 @@
 import os
 import stat
 
+def get_file_info(path):
+    return os.stat(path)
+
 def check_file_permissions():
     findings = []
     file_path = "/etc/passwd"
-    file_info = os.stat(file_path)
+    file_info = get_file_info(file_path)
     for finding in findings:
         print(finding)
 
