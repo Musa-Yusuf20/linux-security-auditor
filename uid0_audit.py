@@ -1,8 +1,7 @@
-import warnings
 
-def check_uid0():
+def check_uid0(passwd_path="/etc/passwd"):
     findings = []
-    with open("/etc/passwd", "r") as file:
+    with open(passwd_path, "r") as file:
         for line in file:
             fields = line.strip().split(":")
             uid = fields[2]
